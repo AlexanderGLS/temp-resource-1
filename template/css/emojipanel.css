@@ -1,0 +1,154 @@
+.EmojiPanel__header,
+.EmojiPanel__footer {
+    padding: 10px;
+    background: var(--coloresfondo);
+}
+.EmojiPanel__header {
+    border-bottom: 1px solid var(--coloresecondario);
+    border-radius: 3px 3px 0 0;
+}
+.EmojiPanel__header input {
+    width: 100%;
+    padding: 5px 14px;
+    border: 1px solid var(--coloresecondario);
+    border-radius: 30px;
+    outline: none;
+    font-size: 14px;
+    font-weight: inherit;
+}
+.EmojiPanel__header input:focus {
+    border-color: var(--coloresecondario);
+}
+.EmojiPanel__categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 10px;
+}
+.EmojiPanel__categories button {
+    flex: 1;
+    min-width: 30px;
+    max-width: 30px;
+}
+@media (min-width: 290px) {
+    .EmojiPanel__categories button {
+        min-width: 30px;
+        max-width: inherit;
+    }
+}
+.EmojiPanel__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--coloresecondario);
+    border-radius: 0 0 3px 3px;
+    display:none;
+}
+.EmojiPanel__brand {
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--coloreprimariofont);
+    transition: color 0.2s;
+}
+.EmojiPanel__brand:hover,
+.EmojiPanel__brand:focus {
+    color: var(--coloreprimariofont);
+}
+.EmojiPanel__btnModifierToggle {
+    font-size: 24px;
+}
+.EmojiPanel__btnModifierToggle.active {
+    display: none;
+}
+.EmojiPanel__modifierDropdown {
+    display: none;
+    height: 30px;
+}
+.EmojiPanel__modifierDropdown.active {
+    display: block;
+}
+.EmojiPanel__results {
+    overflow-y: auto;
+    height: 300px;
+    padding: 0 10px 10px;
+}
+.EmojiPanel__results .emoji {
+    background: var(--coloresfondo);
+}
+.EmojiPanel__noResults {
+    display: none;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: var(--coloreprimariofont);
+}
+.EmojiPanel__category {
+    margin: 15px 0 5px;
+    padding: 0 0 5px;
+    border-bottom: 1px solid var(--coloresecondario);
+    color: var(--coloreprimariofont);
+}
+.EmojiPanel__tooltip {
+    display: none;
+}
+.EmojiPanel {
+    width: 100%;
+    border-radius: 3px;
+    background: var(--coloresfondo);
+    text-align: left;
+    transition: all ease-in-out .2s;
+}
+
+@media (min-width: 290px) {
+    .EmojiPanel {
+        width: 305px;
+    }
+}
+.EmojiPanel--trigger {
+    visibility: hidden;
+    pointer-events: none;
+}
+.EmojiPanel--open {
+    visibility: visible;
+    pointer-events: inherit;
+}
+.EmojiPanel button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.EmojiPanel .emoji {
+    width: 40px;
+    height: 40px;
+    border: 5px solid transparent;
+    border-radius: 3px;
+    font-size: 23px;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.EmojiPanel svg, .emoji svg {
+    transition: all ease-in-out .2s;
+}
+
+.EmojiPanel .emoji:hover,
+.EmojiPanel .emoji:focus {
+    background: var(--coloresecondario);
+    border-color: var(--coloresecondario);
+}
+.EmojiPanel .emoji:hover svg,
+.EmojiPanel .emoji:focus svg{
+    transform: scale(1.4);
+}
+.EmojiPanel .temp {
+    flex: initial;
+    width: 20px;
+    min-width: initial;
+    height: 20px;
+    margin: 5px;
+    border-radius: 3px;
+    background: var(--coloreprimario);
+}

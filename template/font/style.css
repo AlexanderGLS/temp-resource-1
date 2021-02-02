@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?pke7dh');
+  src:  url('fonts/icomoon.eot?pke7dh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pke7dh') format('truetype'),
+    url('fonts/icomoon.woff?pke7dh') format('woff'),
+    url('fonts/icomoon.svg?pke7dh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.7;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-apprezzamento:before {
+  content: "\e900";
+}
+.icon-bloccato:before {
+  content: "\e901";
+}
+.icon-calendario:before {
+  content: "\e902";
+}
+.icon-cancella:before {
+  content: "\e903";
+}
+.icon-cerca:before {
+  content: "\e904";
+}
+.icon-check:before {
+  content: "\e905";
+}
+.icon-commenta:before {
+  content: "\e906";
+}
+.icon-commenti:before {
+  content: "\e907";
+}
+.icon-condividi:before {
+  content: "\e908";
+}
+.icon-emoji:before {
+  content: "\e909";
+}
+.icon-foto:before {
+  content: "\e90a";
+}
+.icon-frecce:before {
+  content: "\e90b";
+}
+.icon-freccia:before {
+  content: "\e90c";
+}
+.icon-impostazioni:before {
+  content: "\e90d";
+}
+.icon-info:before {
+  content: "\e90e";
+}
+.icon-like:before {
+  content: "\e90f";
+}
+.icon-logout:before {
+  content: "\e910";
+}
+.icon-maggiori_info:before {
+  content: "\e911";
+}
+.icon-modifica:before {
+  content: "\e912";
+}
+.icon-more:before {
+  content: "\e913";
+}
+.icon-question:before {
+  content: "\e914";
+}
+.icon-segnala:before {
+  content: "\e915";
+}
+.icon-stanze:before {
+  content: "\e916";
+}
+.icon-tempo:before {
+  content: "\e917";
+}
+.icon-unlike:before {
+  content: "\e918";
+}
+.icon-visite:before {
+  content: "\e919";
+}
